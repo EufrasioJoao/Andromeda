@@ -1,0 +1,41 @@
+.hero_conatiner {
+    width: 100%;
+    min-height: 100vh;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero_conatiner video{
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.hero_conatiner h1{
+    color: var(--violet);
+    z-index: 7;
+    font-size: 4rem;
+    padding: 5px 20px;
+    animation: sc 3s infinite;
+    text-align: center;
+}
+
+
+
+@media (max-width: 650px) {
+    .hero_conatiner h1{
+        font-size: 2rem;
+    }
+}
+
+@keyframes sc {
+    to{
+        scale: 1.2;
+    }
+}
+
